@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
   <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
   <primitive>true</primitive>
   <annotatorImplementationName>edu.cmu.lti.f13.hw4.hw4_xiangl2.collectionreaders.DocumentReader</annotatorImplementationName>
   <analysisEngineMetaData>
     <name>DocumentReader</name>
-    <description/>
+    <description>Document Reader reads documents from the file system and extracts features such like query ID, relevant value and text string. </description>
     <version>1.0</version>
     <vendor/>
     <configurationParameters/>
@@ -20,7 +21,9 @@
     <capabilities>
       <capability>
         <inputs/>
-        <outputs/>
+        <outputs>
+          <type allAnnotatorFeatures="true">edu.cmu.lti.f13.hw4.hw4_xiangl2.typesystems.Document</type>
+        </outputs>
         <languagesSupported/>
       </capability>
     </capabilities>

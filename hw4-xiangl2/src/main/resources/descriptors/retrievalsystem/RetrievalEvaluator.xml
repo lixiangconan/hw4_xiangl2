@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
   <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
   <primitive>true</primitive>
   <annotatorImplementationName>edu.cmu.lti.f13.hw4.hw4_xiangl2.casconsumers.RetrievalEvaluator</annotatorImplementationName>
   <analysisEngineMetaData>
     <name>RetrievalEvaluator</name>
-    <description/>
+    <description>Retrival Evalutor measures the similarity beteen sentences, ranks the results of each query, and calculate MRR (Mean Reciprocal Rank) for all queries. </description>
     <version>1.0</version>
     <vendor/>
-     <configurationParameters>
-      
-   </configurationParameters>
-    <configurationParameterSettings>
-      
-    </configurationParameterSettings>
+     <configurationParameters/>
+    <configurationParameterSettings/>
     <typeSystemDescription>
       <imports>            
         <import location="../typesystems/VectorSpaceTypes.xml"/>
@@ -23,7 +20,9 @@
     <fsIndexCollection/>
     <capabilities>
       <capability>
-        <inputs/>
+        <inputs>
+          <type allAnnotatorFeatures="true">edu.cmu.lti.f13.hw4.hw4_xiangl2.typesystems.Document</type>
+        </inputs>
         <outputs/>
         <languagesSupported/>
       </capability>

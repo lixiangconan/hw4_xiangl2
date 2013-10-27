@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
   <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
   <primitive>true</primitive>
   <annotatorImplementationName>edu.cmu.lti.f13.hw4.hw4_xiangl2.annotators.DocumentVectorAnnotator</annotatorImplementationName>  
   <analysisEngineMetaData>
     <name>DocumentVector</name>
-    <description/>
+    <description>Document Vector annotator annotates tokens in the text string and counts the frequency of tokens. </description>
     <version>1.0</version>
     <vendor/>
     <configurationParameters/>
@@ -19,8 +20,13 @@
     <fsIndexCollection/>
     <capabilities>
       <capability>
-        <inputs/>
-        <outputs/>
+        <inputs>
+          <type allAnnotatorFeatures="true">edu.cmu.lti.f13.hw4.hw4_xiangl2.typesystems.Document</type>
+        </inputs>
+        <outputs>
+          <type allAnnotatorFeatures="true">edu.cmu.lti.f13.hw4.hw4_xiangl2.typesystems.Token</type>
+          <type allAnnotatorFeatures="true">edu.cmu.lti.f13.hw4.hw4_xiangl2.typesystems.Document</type>
+        </outputs>
         <languagesSupported/>
       </capability>
     </capabilities>
