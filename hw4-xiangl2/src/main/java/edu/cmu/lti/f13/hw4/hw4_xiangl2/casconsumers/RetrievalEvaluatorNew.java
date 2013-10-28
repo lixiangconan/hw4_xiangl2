@@ -177,7 +177,7 @@ public class RetrievalEvaluatorNew extends CasConsumer_ImplBase {
         Map.Entry entry = (Map.Entry) tokeniter.next();
         String word = Morphology.stemStatic(new WordTag((String) entry.getKey())).word();
         if (dictionary.containsKey(word))
-          featureVector[i][dictionary.get(word)] = (Integer) entry.getValue();
+          featureVector[i][dictionary.get(word)] += (Integer) entry.getValue();
       }
     }
 
